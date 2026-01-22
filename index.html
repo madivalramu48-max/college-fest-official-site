@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E2X Fest - KLE College</title>
+    <link rel="icon" type="image/png" href="./images/kle-society-logo-png_seeklogo-263356.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-bg" style="background-image: url('./images/B\ \(4\).png');"></div>
+        <div class="welcome-overlay"></div>
+        <div class="welcome-content">
+            <div class="welcome-logo">
+                <img src="./images/download.png" alt="E2X Logo">
+            </div>
+            <h1 class="welcome-title">Welcome to KLE Society's College Of BCA Bailhongal</h1>
+            <p class="welcome-subtitle">E2X Fest 2025 – Unleash Your Energy, Experience, and Excellence!</p>
+            <button class="enter-btn" onclick="enterSite()">
+                <span>Let's Go</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="mainWebsite" class="main-website">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="./images/Screenshot 2025-10-16 173221.png" alt="E2X Fest Logo" class="nav-logo">
+                    <h1>E<span>2</span>X Fest</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#coordinators">Coordinators</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="admin/login.php">Admin</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Banner Slider -->
+        <section id="home" class="hero-section">
+            <div class="slider-container">
+                <!-- Slide 1 -->
+                <div class="slide active" style="background-image: linear-gradient(rgba(102, 126, 234, 0.7), rgba(118, 75, 162, 0.7)), url('./images/kleblh.jpg');">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Welcome to E2X Fest 2025</h1>
+                        <p class="slide-subtitle">KLE Society's Premier Cultural Festival</p>
+                        <a href="#events" class="hero-btn">Explore Events</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: linear-gradient(rgba(240, 147, 251, 0.7), rgba(245, 87, 108, 0.7)), url('./images/kleblh.jpg');">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Unleash Your Talent</h1>
+                        <p class="slide-subtitle">18+ Amazing Events Await You</p>
+                        <a href="#events" class="hero-btn">View All Events</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide" style="background-image: linear-gradient(rgba(79, 172, 254, 0.7), rgba(0, 242, 254, 0.7)), url('./images/kleblh.jpg');">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Join the Competition</h1>
+                        <p class="slide-subtitle">Win Amazing Prizes & Recognition</p>
+                        <a href="#events" class="hero-btn">Register Now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots"></div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="events-section">
+            <div class="container">
+                <h2 class="section-title">Our Events</h2>
+                <p class="section-subtitle">Choose your passion and showcase your talent</p>
+                
+                <div class="events-grid" id="eventsGrid"></div>
+            </div>
+        </section>
+
+        <!-- Coordinators Section -->
+        <section id="coordinators" class="coordinators-section">
+            <div class="container">
+                <h2 class="section-title">Event Coordinators</h2>
+                <p class="section-subtitle">Get in touch with our coordinators</p>
+                
+                <div class="coordinators-grid">
+                    <div class="coordinator-card">
+                        <div class="coordinator-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Nagaraj Ganachari</h3>
+                        <div class="coordinator-events">
+                            <span>Painting</span>
+                            <span>Singing</span>
+                            <span>Gaming</span>
+                            <span>Face-painting</span>
+                        </div>
+                        <a href="tel:+916363054395" class="contact-btn">
+                            <i class="fas fa-phone"></i> +91 63630 54395
+                        </a>
+                    </div>
+
+                    <div class="coordinator-card">
+                        <div class="coordinator-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Shifa Jamadar</h3>
+                        <div class="coordinator-events">
+                            <span>Stand-up Comedy</span>
+                            <span>Dance</span>
+                            <span>Mehandi</span>
+                            <span>Makeup & Hairstyle</span>
+                            <span>Rangoli</span>
+                        </div>
+                        <a href="tel:+919876543211" class="contact-btn">
+                            <i class="fas fa-phone"></i> +91 98765 43211
+                        </a>
+                    </div>
+
+                    <div class="coordinator-card">
+                        <div class="coordinator-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Vanishri Tavagad</h3>
+                        <div class="coordinator-events">
+                            <span>Quiz</span>
+                            <span>Fashion Show</span>
+                            <span>Photography</span>
+                            <span>Essay Writing</span>
+                            <span>Street Play</span>
+                        </div>
+                        <a href="tel:+919482973659" class="contact-btn">
+                            <i class="fas fa-phone"></i> +91 94829 73659
+                        </a>
+                    </div>
+
+                    <div class="coordinator-card">
+                        <div class="coordinator-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Sushmita Kamatagi</h3>
+                        <div class="coordinator-events">
+                            <span>Debate</span>
+                            <span>Collage Making</span>
+                            <span>Best Out Of Waste</span>
+                            <span>Video Making</span>
+                            <span>Meme Making</span>
+                        </div>
+                        <a href="tel:+918095224160" class="contact-btn">
+                            <i class="fas fa-phone"></i> +91 80952 24160
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Modal -->
+        <div id="registrationModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 class="modal-title" id="modalTitle">Register for Event</h2>
+                
+                <form id="registrationForm" class="registration-form" method="POST">
+                    <input type="hidden" id="selectedEvent" name="event_name">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="full_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="college">College Name *</label>
+                            <input type="text" id="college" name="college" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="department">Department *</label>
+                            <select id="department" name="department" required>
+                                <option value="">Select Department</option>
+                                <option value="Science">Science</option>
+                                <option value="Commerce">Commerce</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year *</label>
+                            <select id="year" name="year" required>
+                                <option value="">Select Year</option>
+                                <option value="1st">1st Year</option>
+                                <option value="2nd">2nd Year</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="gamingTypeGroup" style="display: none;">
+                        <label for="gamingType">Select Game *</label>
+                        <select id="gamingType" name="gaming_type">
+                            <option value="">Choose a game</option>
+                            <option value="freefire">Free Fire</option>
+                            <option value="bgmi">BGMI</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="teamSize">Participation Type *</label>
+                        <select id="teamSize" name="team_size" required>
+                            <option value="individual">Individual</option>
+                            <option value="team">Team</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="teamMembersGroup" style="display: none;">
+                        <label for="teamMembers">Team Members (Name: Phone, Name: Phone...)</label>
+                        <textarea id="teamMembers" name="team_members" rows="3" placeholder="Example: John Doe: 9876543210, Jane Smith: 9876543211"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Additional Comments</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Any special requirements or questions?"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Submit Registration</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="successModal" class="modal">
+            <div class="modal-content success-modal-content">
+                <span class="close-modal" onclick="closeSuccessModal()">&times;</span>
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Registration Successful!</h2>
+                <p id="successMessage"></p>
+                <div class="whatsapp-section">
+                    <h3>Join WhatsApp Group</h3>
+                    <p>To get more details about your event, please join the WhatsApp group:</p>
+                    <button id="whatsappJoinBtn" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Join WhatsApp Group
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>E2X Fest 2025</h3>
+                        <p>E2X Fest 2025 is KLE's premier cultural festival celebrating creativity, talent, and innovation through diverse events and competitions.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#coordinators">Coordinators</a></li>
+                            <li><a href="admin/login.php">Admin Panel</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/klesbcabailhongal"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/klebcabailhongal?igsh=N2prcGV6dTdxM3Bj"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/klesbcablh?t=%20o4YdkXMdFRx091R62vYNE&s=08"><i class="fab fa-twitter"></i></a>
+                            <a href="https://youtube.com/@klesbcabailhongal?si=4VAwy3HXvKbjpoAZ"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 E2X Fest - KLE Society College of BCA Bailhongal. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    // Enter Site Function - Simple and Direct
+    function enterSite() {
+        document.getElementById('welcomeScreen').style.display = 'none';
+        document.getElementById('mainWebsite').style.display = 'block';
+        window.scrollTo(0, 0);
+        sessionStorage.setItem('e2x_visited', 'true');
+    }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
